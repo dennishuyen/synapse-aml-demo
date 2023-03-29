@@ -1,0 +1,17 @@
+{
+    "name": "HttpServer2",
+    "type": "Microsoft.Synapse/workspaces/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "HttpServer",
+        "typeProperties": {
+            "url": "https://raw.githubusercontent.com/dennishuyen/synapse-aml-demo/main/data/customer_churn.csv",
+            "enableServerCertificateValidation": true,
+            "authenticationType": "Anonymous"
+        },
+        "connectVia": {
+            "referenceName": "AutoResolveIntegrationRuntime",
+            "type": "IntegrationRuntimeReference"
+        }
+    }
+}
