@@ -1,0 +1,38 @@
+{
+    "name": "StatusCSV",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "synapsexxxxxxx-WorkspaceDefaultStorage",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "status.csv",
+                "folderPath": "data/raw",
+                "fileSystem": "files"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "CustomerID",
+                "type": "String"
+            },
+            {
+                "name": "SatisfactionScore",
+                "type": "String"
+            },
+            {
+                "name": "CLTV",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.Synapse/workspaces/datasets"
+}

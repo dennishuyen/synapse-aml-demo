@@ -1,0 +1,23 @@
+{
+    "name": "StatusHTTP",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "HttpServer1",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "HttpServerLocation",
+                "relativeUrl": "status.csv"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    },
+    "type": "Microsoft.Synapse/workspaces/datasets"
+}

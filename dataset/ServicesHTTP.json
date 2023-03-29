@@ -1,0 +1,23 @@
+{
+    "name": "ServicesHTTP",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "HttpServer1",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "HttpServerLocation",
+                "relativeUrl": "services.csv"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    },
+    "type": "Microsoft.Synapse/workspaces/datasets"
+}

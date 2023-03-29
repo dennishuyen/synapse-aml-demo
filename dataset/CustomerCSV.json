@@ -1,0 +1,190 @@
+{
+    "name": "CustomerCSV",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "synapsexxxxxxx-WorkspaceDefaultStorage",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "customer.csv",
+                "folderPath": "data/transformed",
+                "fileSystem": "files"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "CustomerID",
+                "type": "String"
+            },
+            {
+                "name": "Gender",
+                "type": "String"
+            },
+            {
+                "name": "Age",
+                "type": "String"
+            },
+            {
+                "name": "Under30",
+                "type": "String"
+            },
+            {
+                "name": "SeniorCitizen",
+                "type": "String"
+            },
+            {
+                "name": "Married",
+                "type": "String"
+            },
+            {
+                "name": "Dependents",
+                "type": "String"
+            },
+            {
+                "name": "NumberDependents",
+                "type": "String"
+            },
+            {
+                "name": "Country",
+                "type": "String"
+            },
+            {
+                "name": "State",
+                "type": "String"
+            },
+            {
+                "name": "City",
+                "type": "String"
+            },
+            {
+                "name": "ZipCode",
+                "type": "String"
+            },
+            {
+                "name": "Latitude",
+                "type": "String"
+            },
+            {
+                "name": "Longitude",
+                "type": "String"
+            },
+            {
+                "name": "ReferredFriend",
+                "type": "String"
+            },
+            {
+                "name": "NumberReferrals",
+                "type": "String"
+            },
+            {
+                "name": "TenureMonths",
+                "type": "String"
+            },
+            {
+                "name": "Offer",
+                "type": "String"
+            },
+            {
+                "name": "PhoneService",
+                "type": "String"
+            },
+            {
+                "name": "AvgMonthlyLongDistanceCharges",
+                "type": "String"
+            },
+            {
+                "name": "MultipleLines",
+                "type": "String"
+            },
+            {
+                "name": "InternetService",
+                "type": "String"
+            },
+            {
+                "name": "InternetType",
+                "type": "String"
+            },
+            {
+                "name": "AvgMonthlyGBDownload",
+                "type": "String"
+            },
+            {
+                "name": "OnlineSecurity",
+                "type": "String"
+            },
+            {
+                "name": "OnlineBackup",
+                "type": "String"
+            },
+            {
+                "name": "DeviceProtectionPlan",
+                "type": "String"
+            },
+            {
+                "name": "PremiumTechSupport",
+                "type": "String"
+            },
+            {
+                "name": "StreamingTV",
+                "type": "String"
+            },
+            {
+                "name": "StreamingMovies",
+                "type": "String"
+            },
+            {
+                "name": "StreamingMusic",
+                "type": "String"
+            },
+            {
+                "name": "UnlimitedData",
+                "type": "String"
+            },
+            {
+                "name": "Contract",
+                "type": "String"
+            },
+            {
+                "name": "PaperlessBilling",
+                "type": "String"
+            },
+            {
+                "name": "PaymentMethod",
+                "type": "String"
+            },
+            {
+                "name": "MonthlyCharge",
+                "type": "String"
+            },
+            {
+                "name": "TotalCharges",
+                "type": "String"
+            },
+            {
+                "name": "TotalRefunds",
+                "type": "String"
+            },
+            {
+                "name": "TotalExtraData Charges",
+                "type": "String"
+            },
+            {
+                "name": "TotalLongDistanceCharges",
+                "type": "String"
+            },
+            {
+                "name": "TotalRevenue",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.Synapse/workspaces/datasets"
+}

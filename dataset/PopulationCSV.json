@@ -1,0 +1,38 @@
+{
+    "name": "PopulationCSV",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "synapsexxxxxxx-WorkspaceDefaultStorage",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "population.csv",
+                "folderPath": "data/raw",
+                "fileSystem": "files"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "ID",
+                "type": "String"
+            },
+            {
+                "name": "ZipCode",
+                "type": "String"
+            },
+            {
+                "name": "Population",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.Synapse/workspaces/datasets"
+}
