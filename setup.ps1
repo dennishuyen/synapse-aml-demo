@@ -110,6 +110,10 @@ $file = "./data/ml/customer_churn.csv"
 $blobPath = "data/ml/customer_churn.csv"
 Set-AzStorageBlobContent -File $file -Container "files" -Blob $blobPath -Context $storageContext
 
+# Pause SQL Pool
+Write-host "Pausing the $sqlDatabaseName SQL Pool..."
+Suspend-AzSynapseSqlPool -WorkspaceName $synapseWorkspace -Name $sqlDatabaseName -AsJob
+
 # Create linked service for HTTP data source
 Set-AzSynapseLinkedService -WorkspaceName $synapseWorkspace -Name "HttpServer1" -DefinitionFile "./linkedService/HttpServer1.json"
 
