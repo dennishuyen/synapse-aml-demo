@@ -125,7 +125,7 @@
                 "type": "String"
             },
             {
-                "name": "TotalExtraData Charges",
+                "name": "TotalExtraDataCharges",
                 "type": "String"
             },
             {
